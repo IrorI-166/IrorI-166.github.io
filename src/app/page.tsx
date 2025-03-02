@@ -5,9 +5,10 @@ const stats = [
   { name: 'Achievement of works', value: '0' },
 ]
 
-const socials = ({
+/*const socials = ({
   //TODO: Add links to SNSs below the name
 });
+*/
 
 export default function Home() {
   return (
