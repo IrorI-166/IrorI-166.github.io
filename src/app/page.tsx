@@ -5,13 +5,15 @@ const stats = [
   { name: 'Achievement of works', value: '0' },
 ]
 
-/*const socials = ({
-  //TODO: Add links to SNSs below the name
-});
-*/
+const socials = [
+  { name: 'Instagram', href: 'https://www.instagram.com/tomo_irori/', icon_url: '/Instagram_Glyph_White.svg' },
+  { name: 'GitHub', href: 'https://github.com/IrorI-166', icon_url: '/github-mark-white.svg' }
+]
+
 
 export default function Home() {
   return (
+    // TODO: Change the color more comfortable
     <div className="relative isolate overflow-hidden bg-gray-900 py-24 sm:py-32">Ï
       <div
         aria-hidden="true"
@@ -37,6 +39,21 @@ export default function Home() {
             Python/TypeScript
           </p>
         </div>
+
+        {/* SNSアイコンを横並びにするエリア */}
+        <div className="mt-10 flex items-center gap-4">
+          {socials.map((social) => (
+            <a
+              key={social.name}
+              href={social.href}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={social.icon_url} alt={social.name} className="h-8 w-8" />
+            </a>
+          ))}
+        </div>
+
         <div className="mx-auto mt-10 max-w-2xl lg:mx-0 lg:max-w-none">
           <div className="grid grid-cols-1 gap-x-8 gap-y-6 text-base/7 font-semibold text-white sm:grid-cols-2 md:flex lg:gap-x-10">
             {links.map((link) => (
