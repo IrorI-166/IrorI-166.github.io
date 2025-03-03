@@ -5,13 +5,6 @@ const stats = [
   { name: 'Achievement of works', value: '0' },
 ]
 
-const socials = [
-  { name: 'Instagram', href: 'https://www.instagram.com/tomo_irori/', icon_url: '/Instagram_Glyph_White.svg' },
-  { name: 'GitHub', href: 'https://github.com/IrorI-166', icon_url: '/github-mark-white.svg' },
-  { name: 'YouTube', href: 'https://www.youtube.com/@TomoIrorI', icon_url: '/yt_icon_mono_dark.png' },
-]
-
-
 export default function Home() {
   return (
     // TODO: Change the color more comfortable
