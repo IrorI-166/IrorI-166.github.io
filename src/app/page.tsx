@@ -7,7 +7,8 @@ const stats = [
 
 const socials = [
   { name: 'Instagram', href: 'https://www.instagram.com/tomo_irori/', icon_url: '/Instagram_Glyph_White.svg' },
-  { name: 'GitHub', href: 'https://github.com/IrorI-166', icon_url: '/github-mark-white.svg' }
+  { name: 'GitHub', href: 'https://github.com/IrorI-166', icon_url: '/github-mark-white.svg' },
+  { name: 'YouTube', href: 'https://www.youtube.com/@TomoIrorI', icon_url: '/yt_icon_mono_dark.png' },
 ]
 
 
@@ -40,18 +41,23 @@ export default function Home() {
           </p>
         </div>
 
-        {/* SNSアイコンを横並びにするエリア */}
-        <div className="mt-10 flex items-center gap-4">
-          {socials.map((social) => (
-            <a
-              key={social.name}
-              href={social.href}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img src={social.icon_url} alt={social.name} className="h-8 w-8" />
+        { /* SNSアイコンを横並びにするエリア */}
+        <div className="mt-8 flex items-center gap-4">
+          <div className="h-8 w-10">
+            <a key="YouTube" href="https://www.youtube.com/@TomoIrorI">
+              <img src="/yt_icon_mono_dark.png" alt="YouTube" />
             </a>
-          ))}
+          </div>
+          <div className="h-8 w-8">
+            <a key="Instagram" href="https://www.instagram.com/tomo_irori/">
+              <img src="/Instagram_Glyph_White.svg" alt="Instagram" />
+            </a>
+          </div>
+          <div className="h-8 w-8">
+            <a key="GitHub" href="https://github.com/IrorI-166">
+              <img src="/github-mark-white.svg" alt="GitHub" />
+            </a>
+          </div>
         </div>
 
         <div className="mx-auto mt-10 max-w-2xl lg:mx-0 lg:max-w-none">
