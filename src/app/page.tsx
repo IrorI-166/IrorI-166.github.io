@@ -8,7 +8,7 @@ const stats = [
 export default function Home() {
   return (
     // TODO: Change the color more comfortable
-    <div className="relative isolate overflow-hidden bg-gray-900 py-24 sm:py-32">Ï
+    <div className="relative isolate overflow-hidden bg-gray-900 py-24 sm:py-32">
       <div
         aria-hidden="true"
         className="hidden sm:absolute sm:-top-10 sm:right-1/2 sm:-z-10 sm:mr-10 sm:block sm:transform-gpu sm:blur-3xl"
